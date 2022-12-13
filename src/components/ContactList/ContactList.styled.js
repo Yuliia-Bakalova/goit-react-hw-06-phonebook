@@ -39,15 +39,6 @@ box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         background-color: #da0404;
     }
 `;
-// export const Name = styled.span`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-  
-// `;
-// export const Number = styled.span`
-//   margin-right: 20px;
-// `;
 
 
 

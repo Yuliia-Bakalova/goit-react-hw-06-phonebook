@@ -1,25 +1,24 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-
 import { addContact } from 'redux/contactsSlice';
 import { getContacts } from 'redux/selectors';
-
 import { Form, Label, Input, Button } from './ContactForm.styled';
+
+
+
 
 export const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
-
   const resetField = () => {
     setName('');
     setNumber('');
   };
 
+  
   const  handlerSubmit = evt => {
     evt.preventDefault();
     const names = contacts.map(item => item.name);
